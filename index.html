@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="roadTripIt">
+<head>
+  <meta charset="UTF-8">
+
+  <base href="/">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- My stylesheet -->
+  <link type="text/css" rel="stylesheet" href="/styles/main.css">
+
+  <!-- angular -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+
+  <!-- Bower components -->
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <!-- ngRoute -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+
+  <!-- custom script (angular app) -->
+  <script type="text/javascript" src="app.js"></script>
+
+  <title>Road Trip It</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="header">
+        <h1>roadTripIt</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Google Map API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZQFXXrbbLQsLzKQzsqbw0txA33pyYmGU&callback=initMap"
+    async defer></script>
+</body>
+</html>
